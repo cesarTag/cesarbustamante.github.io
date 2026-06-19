@@ -198,10 +198,115 @@
 
 <script>
 // ── Carga y renderiza content.json ──────────────────────────────
-fetch('content.json')
-  .then(r => r.json())
-  .then(render)
-  .catch(() => console.error('No se pudo cargar content.json'));
+// ── Contenido editable — modifica solo este bloque ──
+const CONTENT = {
+  "meta": {
+    "title": "Tu Nombre — Developer",
+    "description": "Desarrollador Python especializado en backend y automatización.",
+    "domain": "tu_nombre.dev"
+  },
+  "hero": {
+    "status": "disponible para trabajar",
+    "name": "Tu Nombre",
+    "tagline": "Desarrollador Python con foco en backend y automatización. Construyo herramientas que resuelven problemas reales.",
+    "stats": [
+      { "num": "3+", "label": "años de experiencia" },
+      { "num": "12", "label": "proyectos entregados" },
+      { "num": "5",  "label": "repos open source" }
+    ],
+    "links": {
+      "github": "https://github.com/tuusuario",
+      "contact_anchor": "#contacto"
+    }
+  },
+  "about": {
+    "paragraphs": [
+      "Soy desarrollador con X años construyendo soluciones backend, APIs y scripts de automatización. Me interesa escribir código claro, testeable y mantenible, no solo código que funcione.",
+      "Fuera del trabajo me gusta [hobby], contribuir a proyectos open source y seguir aprendiendo sobre [área de interés].",
+      "Actualmente trabajando en [empresa actual] — abierto a proyectos freelance puntuales."
+    ],
+    "skills": [
+      {
+        "category": "Lenguajes & frameworks",
+        "items": [
+          { "name": "Python",  "featured": true },
+          { "name": "FastAPI", "featured": true },
+          { "name": "Django",  "featured": false },
+          { "name": "SQL",     "featured": false },
+          { "name": "Bash",    "featured": false }
+        ]
+      },
+      {
+        "category": "Infraestructura & datos",
+        "items": [
+          { "name": "Docker",     "featured": true },
+          { "name": "PostgreSQL", "featured": false },
+          { "name": "Redis",      "featured": false },
+          { "name": "Linux",      "featured": false },
+          { "name": "Pandas",     "featured": false }
+        ]
+      },
+      {
+        "category": "Herramientas",
+        "items": [
+          { "name": "Git",            "featured": false },
+          { "name": "GitHub Actions", "featured": false },
+          { "name": "REST APIs",      "featured": false }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "icon": "🛠",
+      "name": "Nombre del proyecto",
+      "description": "Descripción breve del proyecto. Qué problema resuelve y por qué importa.",
+      "tags": ["Python", "FastAPI", "Docker"],
+      "repo": "https://github.com/tuusuario/proyecto1",
+      "demo": ""
+    },
+    {
+      "icon": "📊",
+      "name": "Segundo proyecto",
+      "description": "Descripción breve. Muestra el impacto concreto: qué mejoró, cuánto tiempo ahorra.",
+      "tags": ["Pandas", "SQLite"],
+      "repo": "",
+      "demo": ""
+    },
+    {
+      "icon": "🤖",
+      "name": "Tercer proyecto",
+      "description": "Otro proyecto destacado. Cuanto más específico el resultado, más creíble.",
+      "tags": ["Python", "API", "CLI"],
+      "repo": "",
+      "demo": ""
+    }
+  ],
+  "experience": [
+    {
+      "period": "2023 — hoy",
+      "current": true,
+      "role": "Desarrollador Backend",
+      "company": "Empresa S.A.",
+      "location": "Santiago, Chile",
+      "description": "Descripción concisa de responsabilidades y al menos un logro cuantificable."
+    },
+    {
+      "period": "2021 — 2023",
+      "current": false,
+      "role": "Desarrollador Junior",
+      "company": "Otra Empresa",
+      "location": "Remoto",
+      "description": "Descripción de responsabilidades. Puedes agregar más ítems siguiendo el mismo patrón."
+    }
+  ],
+  "contact": {
+    "email": "tu@email.com",
+    "linkedin": "https://linkedin.com/in/tuusuario",
+    "github": "https://github.com/tuusuario"
+  }
+};
+render(CONTENT);
 
 function render(d) {
   // Meta
