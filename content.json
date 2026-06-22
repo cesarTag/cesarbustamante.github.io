@@ -339,6 +339,32 @@
       "logo_fallback": "IFICC"
     }
   ],
+  "logos_carrusel": {
+    "empresas": [
+      { "name": "Stefanini",    "logo": "https://www.stefanini.com/favicon.ico" },
+      { "name": "Thoughtworks", "logo": "https://www.thoughtworks.com/favicon.ico" },
+      { "name": "Banco BCI",    "logo": "https://www.bci.cl/favicon.ico" },
+      { "name": "Betterfly",    "logo": "https://betterfly.com/favicon.ico" },
+      { "name": "Mall Plaza",   "logo": "https://www.mallplaza.com/favicon.ico" },
+      { "name": "PwC",          "logo": "https://www.pwc.com/favicon.ico" },
+      { "name": "CMPC",         "logo": "https://www.cmpc.com/favicon.ico" },
+      { "name": "IaNet",        "logo": "" },
+      { "name": "C+C1",         "logo": "" },
+      { "name": "TSOFT",        "logo": "" }
+    ],
+    "cloud": [
+      { "name": "AWS",        "logo": "https://aws.amazon.com/favicon.ico" },
+      { "name": "GCP",        "logo": "https://cloud.google.com/favicon.ico" },
+      { "name": "Azure",      "logo": "https://azure.microsoft.com/favicon.ico" },
+      { "name": "IBM Cloud",  "logo": "" },
+      { "name": "Databricks", "logo": "https://databricks.com/favicon.ico" },
+      { "name": "SageMaker",  "logo": "" },
+      { "name": "Vertex AI",  "logo": "" },
+      { "name": "Airflow",    "logo": "" },
+      { "name": "Spark",      "logo": "" },
+      { "name": "Kafka",      "logo": "" }
+    ]
+  },
   "contacto": {
     "title": "Abierto a <strong>nuevas oportunidades</strong>",
     "desc": "Proyectos de IA Generativa, roles de ML/Data Engineering o liderazgo técnico. Estoy disponible para conversar sobre desafíos interesantes en cualquier industria.",

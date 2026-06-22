@@ -59,7 +59,7 @@
     .hero-role span { color:var(--sub); }
     .hero-desc { font-size:1.05rem; color:var(--sub); max-width:540px; line-height:1.75; margin-bottom:2.8rem; }
     .hero-desc strong { color:var(--text); font-weight:500; }
-    .hero-ctas { display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:4rem; }
+    .hero-ctas { display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:3rem; }
     .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.72rem 1.5rem; border-radius:8px; font-family:var(--sans); font-size:0.88rem; font-weight:500; text-decoration:none; transition:all 0.18s; cursor:pointer; border:none; white-space:nowrap; }
     .btn-primary { background:linear-gradient(135deg,var(--accent) 0%,#5b4ef0 100%); color:#fff; box-shadow:0 4px 15px rgba(124,109,250,0.3); }
     .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(124,109,250,0.4); }
@@ -67,11 +67,7 @@
     .btn-ghost:hover { border-color:var(--accent); color:var(--accent-hi); transform:translateY(-1px); }
     .btn-outline-green { background:transparent; color:var(--green); border:1px solid rgba(52,211,153,0.35); }
     .btn-outline-green:hover { background:rgba(52,211,153,0.07); transform:translateY(-1px); }
-    .hero-stats { display:flex; gap:3rem; flex-wrap:wrap; }
-    .stat { display:flex; flex-direction:column; }
-    .stat-num { font-size:2rem; font-weight:300; line-height:1; letter-spacing:-0.04em; background:linear-gradient(135deg,var(--text),var(--sub)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-    .stat-label { font-size:0.75rem; color:var(--muted); margin-top:0.3rem; letter-spacing:0.03em; }
-    .stat-divider { width:1px; background:var(--border); align-self:stretch; }
+    .hero-stats-hidden { display:none; }
 
     section { position:relative; z-index:1; max-width:var(--max); margin:0 auto; padding:5rem 2rem; }
     .section-divider { border:none; border-top:1px solid var(--border); max-width:var(--max); margin:0 auto; }
@@ -80,17 +76,7 @@
     h2 { font-size:1.9rem; font-weight:300; letter-spacing:-0.02em; margin-bottom:3rem; }
     h2 strong { font-weight:600; }
 
-    #especialidades { padding-top:0; padding-bottom:5rem; }
-    .spec-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
-    .spec-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--r); padding:1.6rem 1.4rem; transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s; position:relative; overflow:hidden; }
-    .spec-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--card-accent,var(--accent)); opacity:0; transition:opacity 0.2s; }
-    .spec-card:hover { border-color:var(--border-hi); transform:translateY(-3px); box-shadow:0 12px 30px rgba(0,0,0,0.3); }
-    .spec-card:hover::before { opacity:1; }
-    .spec-icon { font-size:1.6rem; margin-bottom:0.9rem; display:block; }
-    .spec-card h3 { font-size:0.9rem; font-weight:600; margin-bottom:0.4rem; }
-    .spec-card p { font-size:0.78rem; color:var(--sub); line-height:1.5; }
-    .spec-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-top:0.9rem; }
-    .spec-tag { font-family:var(--mono); font-size:0.65rem; padding:0.15rem 0.5rem; border-radius:4px; background:var(--surface2); color:var(--sub); border:1px solid var(--border); }
+    #social-proof { padding-top:0; padding-bottom:4rem; }
 
     .about-grid { display:grid; grid-template-columns:1.3fr 0.7fr; gap:4rem; align-items:start; }
     .about-text p { color:var(--sub); margin-bottom:1rem; font-size:0.96rem; }
@@ -162,6 +148,33 @@
     .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.55s ease,transform 0.55s ease; }
     .reveal.visible { opacity:1; transform:translateY(0); }
 
+    /* ── STATS + CARRUSEL ── */
+    #social-proof { padding-top:0; padding-bottom:4rem; }
+    .stats-row { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid var(--border); border-radius:var(--r); overflow:hidden; background:var(--surface); }
+    .stat-cell { flex:1; display:flex; flex-direction:column; padding:1.6rem 1.8rem; border-right:1px solid var(--border); }
+    .stat-cell:last-child { border-right:none; }
+    .stat-cell .stat-num { font-size:2rem; font-weight:300; line-height:1; letter-spacing:-0.04em; background:linear-gradient(135deg,var(--text),var(--sub)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .stat-cell .stat-label { font-size:0.72rem; color:var(--muted); margin-top:0.35rem; letter-spacing:0.03em; }
+
+    .ticker-section { display:flex; flex-direction:column; gap:0.75rem; }
+    .ticker-group { display:flex; flex-direction:column; gap:0.5rem; }
+    .ticker-eyebrow { font-family:var(--mono); font-size:0.65rem; color:var(--muted); letter-spacing:0.12em; text-transform:uppercase; padding:0 0.25rem; }
+    .ticker-wrap { position:relative; overflow:hidden; }
+    .ticker-wrap::before, .ticker-wrap::after { content:''; position:absolute; top:0; bottom:0; width:5rem; z-index:2; pointer-events:none; }
+    .ticker-wrap::before { left:0; background:linear-gradient(to right,var(--bg),transparent); }
+    .ticker-wrap::after  { right:0; background:linear-gradient(to left, var(--bg),transparent); }
+    .ticker-track { display:flex; gap:0.5rem; width:max-content; }
+    .ticker-track.fwd  { animation:ticker-fwd 28s linear infinite; }
+    .ticker-track.back { animation:ticker-back 32s linear infinite; }
+    .ticker-track:hover { animation-play-state:paused; }
+    @keyframes ticker-fwd  { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes ticker-back { from{transform:translateX(-50%)} to{transform:translateX(0)} }
+    .ticker-pill { display:inline-flex; align-items:center; gap:7px; padding:0.38rem 0.9rem; border:1px solid var(--border); border-radius:100px; background:var(--surface); white-space:nowrap; flex-shrink:0; transition:border-color 0.2s; cursor:default; }
+    .ticker-pill:hover { border-color:var(--border-hi); }
+    .ticker-pill img { width:14px; height:14px; object-fit:contain; filter:brightness(0) invert(1); opacity:0.55; flex-shrink:0; }
+    .ticker-pill span { font-family:var(--mono); font-size:0.72rem; color:var(--sub); }
+    .ticker-sep { height:0.5px; background:var(--border); margin:0.25rem 0; }
+
     @media (max-width:720px) {
       .nav-links,.nav-cv { display:none; }
       .nav-toggle { display:flex; }
@@ -218,7 +231,7 @@
 
 <!-- SECCIONES — vacías, pobladas por JS -->
 <section id="hero" aria-label="Presentación"><div class="hero-inner" id="hero-inner"></div></section>
-<section id="especialidades"><div class="spec-grid" id="spec-grid"></div></section>
+<section id="social-proof"><div class="stats-row" id="stats-row"></div><div class="ticker-section" id="ticker-section"></div></section>
 <hr class="section-divider">
 <section id="sobre-mi" aria-labelledby="h-sobre">
   <p class="eyebrow">sobre mí</p>
@@ -303,17 +316,35 @@ fetch('content.json')
       <h1>${h.name_line1}<br><strong class="hero-gradient-text">${h.name_line2}</strong></h1>
       <p class="hero-role">// <span>${h.role}</span></p>
       <p class="hero-desc">${h.description}</p>
-      <div class="hero-ctas">${ctaBtns}</div>
-      <div class="hero-stats">${stats}</div>`;
+      <div class="hero-ctas">${ctaBtns}</div>`;
 
-    /* ESPECIALIDADES */
-    $('spec-grid').innerHTML = d.especialidades.map((s,i) => `
-      <div class="spec-card reveal" style="--card-accent:${s.accent};transition-delay:${i*0.08}s">
-        <span class="spec-icon">${s.icon}</span>
-        <h3>${s.title}</h3>
-        <p>${s.desc}</p>
-        <div class="spec-tags">${s.tags.map(t=>`<span class="spec-tag">${t}</span>`).join('')}</div>
-      </div>`).join('');
+    /* STATS + CARRUSEL */
+    const statsRow = $('stats-row');
+    d.hero.stats.forEach(s => {
+      const cell = mk('div','stat-cell');
+      cell.innerHTML = `<span class="stat-num">${s.num}</span><span class="stat-label">${s.label}</span>`;
+      statsRow.appendChild(cell);
+    });
+
+    function makePill(item) {
+      return `<div class="ticker-pill">${item.logo ? `<img src="${item.logo}" alt="${item.name}" onerror="this.style.display='none'">` : ''}<span>${item.name}</span></div>`;
+    }
+    function buildTrack(items, cls) {
+      const html = items.map(makePill).join('');
+      return `<div class="ticker-track ${cls}">${html}${html}</div>`;
+    }
+
+    const lc = d.logos_carrusel;
+    $('ticker-section').innerHTML = `
+      <div class="ticker-group">
+        <p class="ticker-eyebrow">Empresas</p>
+        <div class="ticker-wrap">${buildTrack(lc.empresas,'fwd')}</div>
+      </div>
+      <div class="ticker-sep"></div>
+      <div class="ticker-group">
+        <p class="ticker-eyebrow">Cloud & plataformas</p>
+        <div class="ticker-wrap">${buildTrack(lc.cloud,'back')}</div>
+      </div>`;
 
     /* SOBRE MÍ */
     $('about-text').innerHTML = d.sobre_mi.paragraphs.map(p=>`<p>${p}</p>`).join('');
