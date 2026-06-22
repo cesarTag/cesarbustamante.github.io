@@ -1,107 +1,350 @@
 {
   "meta": {
-    "title": "Tu Nombre — Developer",
-    "description": "Desarrollador Python especializado en backend y automatización.",
-    "domain": "tu_nombre.dev"
+    "title": "César Bustamante — ML & GenAI Engineer",
+    "description": "ML & GenAI Engineer con 8+ años llevando soluciones de IA desde la prueba de concepto hasta producción.",
+    "nav_logo": "cb.dev",
+    "cv_pdf": "CV_Cesar_Bustamante.pdf",
+    "footer": "Diseñado y construido por César Bustamante · Santiago, Chile",
+    "github": "https://github.com/cesartag/cesartag.github.io"
   },
   "hero": {
-    "status": "disponible para trabajar",
-    "name": "Tu Nombre",
-    "tagline": "Desarrollador Python con foco en backend y automatización. Construyo herramientas que resuelven problemas reales.",
+    "badge": "Disponible · IA Specialist @ Stefanini",
+    "name_line1": "César",
+    "name_line2": "Bustamante Bravo",
+    "role": "ML & GenAI Engineer · Magíster en IA (c) · Ing. Civil Informático",
+    "description": "Ingeniero con <strong>8+ años</strong> llevando soluciones de <strong>IA Generativa y Machine Learning</strong> desde la prueba de concepto hasta producción. Especializado en orquestación de agentes, sistemas RAG y arquitecturas de datos a escala.",
+    "ctas": [
+      { "label": "Ver experiencia", "href": "#experiencia", "style": "primary" },
+      { "label": "LinkedIn ↗",     "href": "https://www.linkedin.com/in/cesarB2007", "style": "ghost", "external": true },
+      { "label": "Contactar",      "href": "mailto:cesarbb2007@gmail.com", "style": "outline-green" }
+    ],
     "stats": [
-      { "num": "3+", "label": "años de experiencia" },
-      { "num": "12", "label": "proyectos entregados" },
-      { "num": "5",  "label": "repos open source" }
-    ],
-    "links": {
-      "github": "https://github.com/tuusuario",
-      "contact_anchor": "#contacto"
-    }
-  },
-  "about": {
-    "paragraphs": [
-      "Soy desarrollador con X años construyendo soluciones backend, APIs y scripts de automatización. Me interesa escribir código claro, testeable y mantenible, no solo código que funcione.",
-      "Fuera del trabajo me gusta [hobby], contribuir a proyectos open source y seguir aprendiendo sobre [área de interés].",
-      "Actualmente trabajando en [empresa actual] — abierto a proyectos freelance puntuales."
-    ],
-    "skills": [
-      {
-        "category": "Lenguajes & frameworks",
-        "items": [
-          { "name": "Python",  "featured": true },
-          { "name": "FastAPI", "featured": true },
-          { "name": "Django",  "featured": false },
-          { "name": "SQL",     "featured": false },
-          { "name": "Bash",    "featured": false }
-        ]
-      },
-      {
-        "category": "Infraestructura & datos",
-        "items": [
-          { "name": "Docker",     "featured": true },
-          { "name": "PostgreSQL", "featured": false },
-          { "name": "Redis",      "featured": false },
-          { "name": "Linux",      "featured": false },
-          { "name": "Pandas",     "featured": false }
-        ]
-      },
-      {
-        "category": "Herramientas",
-        "items": [
-          { "name": "Git",            "featured": false },
-          { "name": "GitHub Actions", "featured": false },
-          { "name": "REST APIs",      "featured": false }
-        ]
-      }
+      { "num": "8+",  "label": "años de experiencia" },
+      { "num": "10+", "label": "empresas & proyectos" },
+      { "num": "4",   "label": "plataformas cloud" },
+      { "num": "3",   "label": "roles de liderazgo técnico" }
     ]
   },
-  "projects": [
-    {
-      "icon": "🛠",
-      "name": "Nombre del proyecto",
-      "description": "Descripción breve del proyecto. Qué problema resuelve y por qué importa.",
-      "tags": ["Python", "FastAPI", "Docker"],
-      "repo": "https://github.com/tuusuario/proyecto1",
-      "demo": ""
-    },
-    {
-      "icon": "📊",
-      "name": "Segundo proyecto",
-      "description": "Descripción breve. Muestra el impacto concreto: qué mejoró, cuánto tiempo ahorra.",
-      "tags": ["Pandas", "SQLite"],
-      "repo": "",
-      "demo": ""
-    },
+  "especialidades": [
     {
       "icon": "🤖",
-      "name": "Tercer proyecto",
-      "description": "Otro proyecto destacado. Cuanto más específico el resultado, más creíble.",
-      "tags": ["Python", "API", "CLI"],
-      "repo": "",
-      "demo": ""
-    }
-  ],
-  "experience": [
-    {
-      "period": "2023 — hoy",
-      "current": true,
-      "role": "Desarrollador Backend",
-      "company": "Empresa S.A.",
-      "location": "Santiago, Chile",
-      "description": "Descripción concisa de responsabilidades y al menos un logro cuantificable."
+      "title": "IA Generativa & Agentes",
+      "desc": "Diseño y producción de sistemas agenticos, RAG, Prompt Engineering y LLMOps.",
+      "accent": "var(--accent)",
+      "tags": ["LangGraph", "RAG", "LangChain", "MCP"]
     },
     {
-      "period": "2021 — 2023",
-      "current": false,
-      "role": "Desarrollador Junior",
-      "company": "Otra Empresa",
-      "location": "Remoto",
-      "description": "Descripción de responsabilidades. Puedes agregar más ítems siguiendo el mismo patrón."
+      "icon": "⚙️",
+      "title": "Machine Learning",
+      "desc": "Modelos en producción, MLOps, sistemas de recomendación y NLP aplicado.",
+      "accent": "var(--cyan)",
+      "tags": ["SageMaker", "MLflow", "PyTorch", "Sklearn"]
+    },
+    {
+      "icon": "🏗️",
+      "title": "Ingeniería de Datos",
+      "desc": "Arquitecturas Batch & Streaming, pipelines ETL y plataformas de datos en cloud.",
+      "accent": "var(--green)",
+      "tags": ["Databricks", "Airflow", "Spark", "GCP/AWS"]
+    },
+    {
+      "icon": "☁️",
+      "title": "Cloud & Liderazgo Técnico",
+      "desc": "Arquitecturas cloud multi-provider, CI/CD y gestión de equipos de datos e IA.",
+      "accent": "var(--orange)",
+      "tags": ["AWS", "GCP", "Docker", "Terraform"]
     }
   ],
-  "contact": {
-    "email": "tu@email.com",
-    "linkedin": "https://linkedin.com/in/tuusuario",
-    "github": "https://github.com/tuusuario"
+  "sobre_mi": {
+    "paragraphs": [
+      "Ingeniero con más de 8 años de experiencia llevando soluciones de <strong>IA Generativa y Machine Learning desde la prueba de concepto hasta producción</strong> en la nube, sobre una base sólida de Ingeniería de Datos.",
+      "Especializado en orquestación de agentes <strong>(LangGraph)</strong>, sistemas <strong>RAG</strong> y arquitecturas de datos Batch &amp; Streaming. Experiencia en <strong>Banca, Retail, Transporte y Startups</strong>.",
+      "Con foco en el trabajo en equipo y la entrega de impacto medible. Comprometido con el aprendizaje continuo y la resolución de problemas complejos de alto impacto.",
+      "Fuera del trabajo disfruto de los videojuegos, lectura técnica, ciclismo, y coleccionar y escuchar música en distintos formatos."
+    ],
+    "contacto": [
+      { "icon": "✉",  "label": "cesarbb2007@gmail.com",         "href": "mailto:cesarbb2007@gmail.com" },
+      { "icon": "in", "label": "linkedin.com/in/cesarB2007",     "href": "https://www.linkedin.com/in/cesarB2007", "external": true },
+      { "icon": "📱", "label": "+56 9 5449 4146",               "href": "tel:+56954494146" },
+      { "icon": "📍", "label": "Santiago, Chile" },
+      { "icon": "💬", "label": "Español nativo · Inglés B1" }
+    ]
+  },
+  "experiencia": [
+    {
+      "period": "OCT 2025 — actual",
+      "badge": "actual",
+      "role": "IA Specialist",
+      "company": "Stefanini",
+      "logo": "https://www.stefanini.com/favicon.ico",
+      "bullets": [
+        "Diseñé un orquestador de agentes para transferencias en lenguaje natural (LangGraph + FastAPI).",
+        "Implementé un sistema de migración de software legacy basado en agentes de IA, acelerando el proceso frente al método manual.",
+        "Apliqué RAG, Prompt Engineering y matching semántico (RapidFuzz) para elevar la precisión de las respuestas."
+      ]
+    },
+    {
+      "period": "JUL 2025 — OCT 2025",
+      "badge": "consultoría",
+      "role": "Data Engineer",
+      "company": "CMPC",
+      "logo": "https://www.cmpc.com/favicon.ico",
+      "bullets": [
+        "Refactoricé ETLs con agregaciones jerárquicas sobre volúmenes Big Data en GCP, reduciendo el tiempo de procesamiento significativamente.",
+        "Optimicé el escalamiento de las APIs, mejorando la latencia y estabilidad bajo carga."
+      ]
+    },
+    {
+      "period": "DIC 2024 — JUL 2025",
+      "role": "Líder Técnico — IA Generativa",
+      "company": "IaNet",
+      "bullets": [
+        "Lideré un equipo implementando aplicaciones de IA Generativa en AWS, entregando múltiples soluciones a producción.",
+        "Definí la arquitectura de datos y procesamiento masivo en cloud, incorporando scraping, aseguramiento de calidad/seguridad y pipelines CI/CD.",
+        "Gestioné el equipo técnico y coordiné la implementación cloud de procesamiento de datos a escala."
+      ]
+    },
+    {
+      "period": "ABR 2024 — AGO 2024",
+      "badge": "consultoría",
+      "role": "Machine Learning Engineer",
+      "company": "Thoughtworks",
+      "bullets": [
+        "Desarrollé pruebas de concepto de IA Generativa con LLMs mediante Vertex AI, validando casos de uso para el cliente.",
+        "Implementé agentes inteligentes con LangChain y LangGraph para automatizar procesos, reduciendo el esfuerzo manual."
+      ]
+    },
+    {
+      "period": "ENE 2024 — ABR 2024",
+      "badge": "consultoría",
+      "role": "Líder Técnico — ML Engineer",
+      "company": "C+C1 Consultores",
+      "bullets": [
+        "Implementé un chat de consulta con IA Generativa para la FIDAE, atendiendo a múltiples usuarios simultáneos.",
+        "Desarrollé deduplicación semántica sobre grandes volúmenes de datos con técnicas NLP, reduciendo registros duplicados significativamente."
+      ]
+    },
+    {
+      "period": "DIC 2021 — AGO 2023",
+      "role": "Machine Learning Engineer",
+      "company": "Banco BCI",
+      "bullets": [
+        "Diseñé soluciones de ML incluyendo sistemas de recomendación con impacto directo en clientes del banco.",
+        "Preparé y dispuse datos con Databricks (Python y Spark-SQL) para alimentar modelos en producción.",
+        "Construí pipelines de datos con Airflow, asegurando ejecuciones diarias confiables sobre múltiples fuentes.",
+        "Implementé flujos MLOps con SageMaker, reduciendo el tiempo de despliegue de modelos."
+      ]
+    },
+    {
+      "period": "FEB 2021 — NOV 2021",
+      "role": "Data Platform Engineer",
+      "company": "Betterfly",
+      "bullets": [
+        "Definí e implementé arquitecturas de ingesta de datos con AWS Glue, integrando múltiples fuentes.",
+        "Implementé flujos MLOps con SageMaker, reduciendo el tiempo de despliegue de modelos a producción."
+      ]
+    },
+    {
+      "period": "SEP 2019 — FEB 2021",
+      "role": "Data Engineer",
+      "company": "Mall Plaza",
+      "bullets": [
+        "Integré múltiples fuentes de datos y desarrollé microservicios en Java para centralizar información del negocio.",
+        "Implementé arquitectura cloud para cargas Batch y Streaming, procesando grandes volúmenes de registros diarios.",
+        "Supervisé un proyecto de Ciencia de Datos para optimización del mix comercial."
+      ]
+    },
+    {
+      "period": "SEP 2018 — JUN 2019",
+      "role": "Data Scientist",
+      "company": "PwC",
+      "bullets": [
+        "Implementé modelos predictivos para prevenir la deserción universitaria, alcanzando alta precisión en clasificación.",
+        "Realicé DataOps y minería de datos con Python, con visualización en Power BI para stakeholders no técnicos.",
+        "Procesé masivamente correos electrónicos mediante técnicas de NLP para extracción de insights."
+      ]
+    },
+    {
+      "period": "MAR 2016 — MAY 2018",
+      "role": "Analista y Consultor — Inspección de Código",
+      "company": "TSOFT",
+      "bullets": [
+        "Analicé y aseguré la calidad de código en proyectos de clientes, reduciendo defectos y mejorando la mantenibilidad."
+      ]
+    },
+    {
+      "period": "ENE 2016 — FEB 2016",
+      "role": "Práctica Profesional",
+      "company": "Synopsys",
+      "bullets": ["Análisis y corrección de código C++."]
+    },
+    {
+      "period": "MAR 2015 — JUL 2015",
+      "role": "Ayudante — Estructuras de Datos",
+      "company": "Universidad Católica del Maule",
+      "bullets": ["Apoyo docente en el ramo de Estructuras de Datos para estudiantes de Ingeniería Informática."]
+    }
+  ],
+  "skills": [
+    {
+      "category": "IA Generativa",
+      "items": [
+        { "name": "LangGraph",         "style": "hi" },
+        { "name": "LangChain",         "style": "hi" },
+        { "name": "RAG",               "style": "hi" },
+        { "name": "Prompt Engineering","style": "hi" },
+        { "name": "Agentes IA",        "style": "cyan" },
+        { "name": "MCP",               "style": "cyan" },
+        { "name": "LLMOps",            "style": "cyan" },
+        { "name": "Fine Tuning",       "style": "" },
+        { "name": "Transfer Learning", "style": "" },
+        { "name": "VectorStores",      "style": "" },
+        { "name": "Bedrock",           "style": "" },
+        { "name": "Gemini",            "style": "" },
+        { "name": "LLaMA",             "style": "" },
+        { "name": "GPT",               "style": "" }
+      ]
+    },
+    {
+      "category": "Machine Learning",
+      "items": [
+        { "name": "PyTorch",          "style": "hi" },
+        { "name": "Scikit-learn",     "style": "hi" },
+        { "name": "MLflow",           "style": "hi" },
+        { "name": "SageMaker",        "style": "hi" },
+        { "name": "TensorFlow",       "style": "" },
+        { "name": "Spark MLlib",      "style": "" },
+        { "name": "MLOps",            "style": "" },
+        { "name": "Data Augmentation","style": "" }
+      ]
+    },
+    {
+      "category": "Lenguajes & Frameworks",
+      "items": [
+        { "name": "Python",      "style": "hi" },
+        { "name": "SQL",         "style": "hi" },
+        { "name": "FastAPI",     "style": "hi" },
+        { "name": "Java",        "style": "" },
+        { "name": "Spring Boot", "style": "" },
+        { "name": "Flask",       "style": "" },
+        { "name": "NodeJS",      "style": "" },
+        { "name": "Shell",       "style": "" },
+        { "name": "PL/SQL",      "style": "" },
+        { "name": "T-SQL",       "style": "" }
+      ]
+    },
+    {
+      "category": "Big Data & Pipelines",
+      "items": [
+        { "name": "Databricks",      "style": "hi" },
+        { "name": "Apache Spark",    "style": "hi" },
+        { "name": "Airflow",         "style": "hi" },
+        { "name": "Kafka",           "style": "" },
+        { "name": "Hadoop",          "style": "" },
+        { "name": "AWS Glue",        "style": "" },
+        { "name": "Step Functions",  "style": "" },
+        { "name": "Pentaho",         "style": "" }
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        { "name": "AWS",             "style": "hi green" },
+        { "name": "GCP",             "style": "hi green" },
+        { "name": "Docker",          "style": "green" },
+        { "name": "Terraform",       "style": "green" },
+        { "name": "Azure",           "style": "" },
+        { "name": "IBM Cloud",       "style": "" },
+        { "name": "GitHub Actions",  "style": "" },
+        { "name": "AWS CodePipeline","style": "" },
+        { "name": "Git",             "style": "" },
+        { "name": "Bitbucket",       "style": "" }
+      ]
+    },
+    {
+      "category": "Bases de Datos",
+      "items": [
+        { "name": "PostgreSQL", "style": "hi" },
+        { "name": "BigQuery",   "style": "" },
+        { "name": "Redshift",   "style": "" },
+        { "name": "Teradata",   "style": "" },
+        { "name": "MongoDB",    "style": "" },
+        { "name": "Redis",      "style": "" },
+        { "name": "Oracle",     "style": "" },
+        { "name": "MySQL",      "style": "" },
+        { "name": "Qdrant",     "style": "" },
+        { "name": "ChromaDB",   "style": "" },
+        { "name": "Neo4J",      "style": "" },
+        { "name": "HBase",      "style": "" }
+      ]
+    }
+  ],
+  "educacion": [
+    {
+      "period": "2024 — 2026",
+      "institution": "Universidad Adolfo Ibáñez",
+      "degree": "Magíster en Inteligencia Artificial",
+      "logo": "https://www.uai.cl/favicon.ico",
+      "logo_fallback": "UAI"
+    },
+    {
+      "period": "2020 — 2021",
+      "institution": "Pontificia Universidad Católica de Chile",
+      "degree": "Diplomado, Big Data y Machine Learning",
+      "logo": "https://www.uc.cl/favicon.ico",
+      "logo_fallback": "PUC"
+    },
+    {
+      "period": "2009 — 2015",
+      "institution": "Universidad Católica del Maule",
+      "degree": "Ingeniería Civil Informática",
+      "logo": "https://www.ucm.cl/favicon.ico",
+      "logo_fallback": "UCM"
+    }
+  ],
+  "cursos": [
+    {
+      "period": "06/25 — 08/25 · UAI",
+      "title": "Prompt Engineering",
+      "detail": "45 horas · Universidad Adolfo Ibáñez",
+      "logo": "https://www.uai.cl/favicon.ico",
+      "logo_fallback": "UAI"
+    },
+    {
+      "period": "06/24 — 10/24 · Kibernum",
+      "title": "Diploma Ciencia de Datos",
+      "detail": "168 horas · Kibernum Academy",
+      "logo": "https://kibernum.com/favicon.ico",
+      "logo_fallback": "KIB"
+    },
+    {
+      "period": "10/23 — 11/23 · MIT Xpro",
+      "title": "Deep Learning: Redes Neuronales",
+      "detail": "48 horas · MIT Xpro",
+      "logo": "https://xpro.mit.edu/favicon.ico",
+      "logo_fallback": "MIT"
+    },
+    {
+      "period": "05/22 — 11/22 · Bourbaki",
+      "title": "ML & AI for the Working Analyst",
+      "detail": "96 horas · Colegio de Matemáticas Bourbaki",
+      "logo": "https://bourbaki.cl/favicon.ico",
+      "logo_fallback": "BRB"
+    },
+    {
+      "period": "08/16 — 12/16 · IFICC",
+      "title": "Modelamiento de Sistemas Complejos",
+      "detail": "50 horas · Instituto de Filosofía y Ciencias de la Complejidad",
+      "logo": "https://ificc.cl/favicon.ico",
+      "logo_fallback": "IFICC"
+    }
+  ],
+  "contacto": {
+    "title": "Abierto a <strong>nuevas oportunidades</strong>",
+    "desc": "Proyectos de IA Generativa, roles de ML/Data Engineering o liderazgo técnico. Estoy disponible para conversar sobre desafíos interesantes en cualquier industria.",
+    "email": "cesarbb2007@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/cesarB2007",
+    "phone": "+56 9 5449 4146",
+    "phone_href": "tel:+56954494146"
   }
 }
