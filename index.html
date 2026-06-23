@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="">
+
+  <!-- SEO base -->
+  <title>César Bustamante — ML & GenAI Engineer | Santiago, Chile</title>
+  <meta name="description" content="Ingeniero con 8+ años llevando soluciones de IA Generativa y Machine Learning desde la prueba de concepto hasta producción. Especializado en LangGraph, RAG y arquitecturas de datos a escala.">
+  <meta name="author" content="César Bustamante Bravo">
+  <meta name="keywords" content="Machine Learning Engineer, GenAI, IA Generativa, LangGraph, RAG, Data Engineer, Python, Santiago Chile">
+  <link rel="canonical" href="https://cesartag.github.io/">
+
+  <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="César Bustamante — ML & GenAI Engineer">
+  <meta property="og:description" content="Ingeniero con 8+ años en IA Generativa, Machine Learning e Ingeniería de Datos. Especializado en LangGraph, RAG, Databricks y arquitecturas cloud.">
+  <meta property="og:url" content="https://cesartag.github.io/">
+  <meta property="og:locale" content="es_CL">
+  <meta property="profile:first_name" content="César">
+  <meta property="profile:last_name" content="Bustamante Bravo">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="César Bustamante — ML & GenAI Engineer">
+  <meta name="twitter:description" content="Ingeniero con 8+ años en IA Generativa y ML. LangGraph · RAG · Databricks · AWS · GCP.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -225,46 +244,114 @@
   <a href="#contacto">contacto</a>
 </nav>
 
-<!-- SECCIONES — vacías, pobladas por JS -->
-<section id="hero" aria-label="Presentación"><div class="hero-inner" id="hero-inner"></div></section>
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTENIDO ESTÁTICO — visible para crawlers, ATS, previsualizaciones
+     El JS lo reemplaza con la versión interactiva al cargar.
+     ═══════════════════════════════════════════════════════════════ -->
+
+<!-- structured data para Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "César Bustamante Bravo",
+  "jobTitle": "ML & GenAI Engineer",
+  "description": "Ingeniero con 8+ años en IA Generativa, Machine Learning e Ingeniería de Datos.",
+  "email": "cesarbb2007@gmail.com",
+  "telephone": "+56954494146",
+  "url": "https://cesartag.github.io/",
+  "sameAs": ["https://www.linkedin.com/in/cesarB2007"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
+  "knowsAbout": ["Machine Learning", "IA Generativa", "LangGraph", "RAG", "Python", "FastAPI", "Databricks", "AWS", "GCP"]
+}
+</script>
+
+<section id="hero" aria-label="Presentación">
+  <div class="hero-inner" id="hero-inner">
+    <!-- static fallback -->
+    <h1>César <strong class="hero-gradient-text">Bustamante Bravo</strong></h1>
+    <p class="hero-role">// <span>ML &amp; GenAI Engineer · Magíster en IA (c) · Ing. Civil Informático</span></p>
+    <p class="hero-desc">Ingeniero con <strong>8+ años</strong> llevando soluciones de <strong>IA Generativa y Machine Learning</strong> desde la prueba de concepto hasta producción. Especializado en orquestación de agentes, sistemas RAG y arquitecturas de datos a escala.</p>
+  </div>
+</section>
+
 <section id="social-proof"><div class="stats-row" id="stats-row"></div><div class="ticker-section" id="ticker-section"></div></section>
 <hr class="section-divider">
+
 <section id="sobre-mi" aria-labelledby="h-sobre">
   <p class="eyebrow">sobre mí</p>
   <h2 id="h-sobre">Un poco de <strong>contexto</strong></h2>
   <div class="about-grid">
-    <div class="about-text reveal" id="about-text"></div>
+    <div class="about-text reveal" id="about-text">
+      <p>Ingeniero con más de 8 años de experiencia en IA Generativa, Machine Learning e Ingeniería de Datos. Experiencia en Banca, Retail, Transporte y Startups.</p>
+      <p>Contacto: <a href="mailto:cesarbb2007@gmail.com">cesarbb2007@gmail.com</a> · <a href="https://www.linkedin.com/in/cesarB2007">LinkedIn</a> · +56 9 5449 4146</p>
+    </div>
     <div class="contact-info reveal" style="transition-delay:0.1s" id="contact-info">
       <p class="contact-info-title">Información de contacto</p>
     </div>
   </div>
 </section>
 <hr class="section-divider">
+
 <section id="experiencia" aria-labelledby="h-exp">
   <p class="eyebrow">experiencia laboral</p>
   <h2 id="h-exp">Trayectoria <strong>profesional</strong></h2>
-  <div class="timeline" id="timeline"></div>
+  <div class="timeline" id="timeline">
+    <!-- static fallback para ATS/crawlers -->
+    <div style="display:none">
+      <p>IA Specialist — Stefanini (Oct 2025 - actual)</p>
+      <p>Data Engineer — CMPC (Jul 2025 - Oct 2025)</p>
+      <p>Líder Técnico IA Generativa — IaNet (Dic 2024 - Jul 2025)</p>
+      <p>Machine Learning Engineer — Thoughtworks (Abr 2024 - Ago 2024)</p>
+      <p>Líder Técnico ML Engineer — C+C1 Consultores (Ene 2024 - Abr 2024)</p>
+      <p>Machine Learning Engineer — Banco BCI (Dic 2021 - Ago 2023)</p>
+      <p>Data Platform Engineer — Betterfly (Feb 2021 - Nov 2021)</p>
+      <p>Data Engineer — Mall Plaza (Sep 2019 - Feb 2021)</p>
+      <p>Data Scientist — PwC (Sep 2018 - Jun 2019)</p>
+    </div>
+  </div>
 </section>
 <hr class="section-divider">
+
 <section id="skills" aria-labelledby="h-skills">
   <p class="eyebrow">aptitudes técnicas</p>
   <h2 id="h-skills">Stack <strong>tecnológico</strong></h2>
-  <div class="skills-cols" id="skills-cols"></div>
+  <div class="skills-cols" id="skills-cols">
+    <div style="display:none">
+      Python, FastAPI, SQL, LangChain, LangGraph, RAG, Prompt Engineering, Agentes IA, MCP, LLMOps,
+      PyTorch, Scikit-learn, MLflow, SageMaker, TensorFlow, Databricks, Apache Spark, Airflow, Kafka,
+      AWS, GCP, Azure, Docker, Terraform, PostgreSQL, BigQuery, MongoDB, ChromaDB, Qdrant, Neo4J
+    </div>
+  </div>
 </section>
 <hr class="section-divider">
+
 <section id="educacion" aria-labelledby="h-edu">
   <p class="eyebrow">formación</p>
-  <h2 id="h-edu">Educación & <strong>Cursos</strong></h2>
-  <div class="edu-list" id="edu-list"></div>
+  <h2 id="h-edu">Educación &amp; <strong>Cursos</strong></h2>
+  <div class="edu-list" id="edu-list">
+    <div style="display:none">
+      <p>Magíster en Inteligencia Artificial — Universidad Adolfo Ibáñez (2024-2026)</p>
+      <p>Diplomado Big Data y Machine Learning — Pontificia Universidad Católica de Chile (2020-2021)</p>
+      <p>Ingeniería Civil Informática — Universidad Católica del Maule (2009-2015)</p>
+    </div>
+  </div>
   <div class="courses-grid" id="courses-grid"></div>
 </section>
 <hr class="section-divider">
+
 <section id="contacto" aria-labelledby="h-contacto">
   <p class="eyebrow">contacto</p>
   <h2 id="h-contacto" style="margin-bottom:2rem">¿<strong>Hablamos?</strong></h2>
-  <div class="contact-wrap reveal" id="contact-wrap"></div>
+  <div class="contact-wrap reveal" id="contact-wrap">
+    <div style="display:none">
+      <p>Email: cesarbb2007@gmail.com</p>
+      <p>LinkedIn: https://www.linkedin.com/in/cesarB2007</p>
+      <p>Teléfono: +56 9 5449 4146</p>
+    </div>
+  </div>
 </section>
-<footer id="site-footer"></footer>
+<footer id="site-footer">César Bustamante Bravo · ML &amp; GenAI Engineer · Santiago, Chile</footer>
 
 <script>
 /* ── helpers ── */
