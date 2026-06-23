@@ -167,11 +167,13 @@
 
     /* ── STATS + CARRUSEL ── */
     #social-proof { padding-top:0; padding-bottom:4rem; }
-    .stats-row { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid var(--border); border-radius:var(--r); overflow:hidden; background:var(--surface); }
-    .stat-cell { flex:1; display:flex; flex-direction:column; padding:1.6rem 1.8rem; border-right:1px solid var(--border); }
-    .stat-cell:last-child { border-right:none; }
-    .stat-cell .stat-num { font-size:2rem; font-weight:300; line-height:1; letter-spacing:-0.04em; background:linear-gradient(135deg,var(--text),var(--sub)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-    .stat-cell .stat-label { font-size:0.72rem; color:var(--muted); margin-top:0.35rem; letter-spacing:0.03em; }
+    .stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; margin-bottom:2.5rem; }
+    .stat-cell { background:var(--surface); border:1px solid var(--border); border-radius:var(--r); padding:1.4rem 1.4rem; display:flex; flex-direction:column; gap:0.3rem; transition:border-color 0.2s; }
+    .stat-cell:hover { border-color:var(--border-hi); }
+    .stat-cell .stat-icon { font-size:1.1rem; color:var(--muted); margin-bottom:0.2rem; }
+    .stat-cell .stat-num { font-size:1.9rem; font-weight:300; line-height:1; letter-spacing:-0.04em; background:linear-gradient(135deg,var(--text),var(--sub)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .stat-cell .stat-label { font-size:0.72rem; color:var(--sub); margin-top:0.2rem; }
+    .stat-cell .stat-sub { font-size:0.65rem; color:var(--muted); font-style:italic; line-height:1.4; margin-top:0.15rem; }
 
     .ticker-section { display:flex; flex-direction:column; gap:0.75rem; }
     .ticker-group { display:flex; flex-direction:column; gap:0.5rem; }
@@ -196,6 +198,7 @@
       .nav-links,.nav-cv { display:none; }
       .nav-toggle { display:flex; }
       #hero { padding-top:calc(var(--nav-h) + 2rem); }
+      .stats-row { grid-template-columns:repeat(2,1fr); }
       .about-grid { grid-template-columns:1fr; gap:2.5rem; }
       .tl-item { grid-template-columns:1fr; gap:0.3rem; }
       .edu-item { grid-template-columns:1fr; gap:0.3rem; }
@@ -404,10 +407,10 @@ const _CV = {
       { "label": "Contactar",      "href": "mailto:cesarbb2007@gmail.com", "style": "outline-green" }
     ],
     "stats": [
-      { "num": "8+",  "label": "años de experiencia" },
-      { "num": "5+", "label": "industrias: banca, retail, transporte, tech, consultoría" },
-      { "num": "4",   "label": "plataformas cloud" },
-      { "num": "3",   "label": "roles de liderazgo técnico" }
+      { "icon": "ti-clock",    "num": "8+", "label": "años de experiencia", "sub": "" },
+      { "icon": "ti-building", "num": "5",  "label": "industrias",          "sub": "banca · retail · transporte · tech · consultoría" },
+      { "icon": "ti-cloud",    "num": "4",  "label": "plataformas cloud",   "sub": "AWS · GCP · Azure · IBM" },
+      { "icon": "ti-users",    "num": "3",  "label": "roles de liderazgo",  "sub": "" }
     ]
   },
   "especialidades": [
@@ -784,7 +787,11 @@ const _CV = {
     const statsRow = $('stats-row');
     d.hero.stats.forEach(s => {
       const cell = mk('div','stat-cell');
-      cell.innerHTML = `<span class="stat-num">${s.num}</span><span class="stat-label">${s.label}</span>`;
+      cell.innerHTML = `
+        <i class="ti ${s.icon} stat-icon" aria-hidden="true"></i>
+        <span class="stat-num">${s.num}</span>
+        <span class="stat-label">${s.label}</span>
+        ${s.sub ? `<span class="stat-sub">${s.sub}</span>` : ''}`;
       statsRow.appendChild(cell);
     });
 
